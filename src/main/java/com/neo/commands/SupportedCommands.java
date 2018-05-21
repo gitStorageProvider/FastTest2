@@ -2,6 +2,8 @@ package com.neo.commands;
 
 import com.neo.commands.adminCommands.*;
 import com.neo.commands.commonCommands.*;
+import com.neo.commands.studentCommands.FinishTestCommand;
+import com.neo.commands.studentCommands.StartTestCommand;
 
 public enum SupportedCommands {
     ADD_ADMIN("addAdmin"){{
@@ -52,8 +54,8 @@ public enum SupportedCommands {
     LOGOUT("logout"){{
         this.command = new LogoutCommand();
     }},
-    REGISTER_STUDENT("registerStudent"){{
-        this.command = new RegisterStudentCommand();
+    ADD_STUDENT("addStudent"){{
+        this.command = new AddStudentCommand();
     }},
     STUDENT_LOGIN("studentLogin") {{
         this.command = new StudentLoginCommand();
@@ -63,6 +65,12 @@ public enum SupportedCommands {
     }},
     GO_TO_STUDENT_LOGIN_PAGE("goToStudentLoginPage"){{
         this.command = new GoToStudentLoginPage();
+    }},
+    START_NEW_TEST("startNewTest"){{
+        this.command = new StartTestCommand();
+    }},
+    FINISH_TEST("finishTest"){{
+        this.command = new FinishTestCommand();
     }};
 
     private SupportedCommands(String commandName){

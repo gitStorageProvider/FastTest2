@@ -7,6 +7,6 @@
 </head>
 <body>
 views/index.jsp
-<%--<jsp:forward page="${pageContext.request.contextPath}/WEB-INF/views/common/login.jsp"/>--%>
+<%--<jsp:forward page="${pageContext.request.contextPath}/WEB-INF/views/common/@@login.jsp"/>--%>
 </body>
 </html>

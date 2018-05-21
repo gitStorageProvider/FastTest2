@@ -1,11 +1,11 @@
-package com.neo.commands.adminCommands;
+package com.neo.commands.commonCommands;
 
 import com.neo.commands.ICommand;
 import com.neo.controller.SessionContent;
 
 import javax.servlet.ServletException;
 
-public class ShowAllTestsByStudentCommand implements ICommand {
+public class AddStudentCommand implements ICommand {
     @Override
     //ToDo: realize method below
     public String execute(SessionContent sessionContent) throws ServletException {

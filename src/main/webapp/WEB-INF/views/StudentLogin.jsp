@@ -10,6 +10,13 @@
     <input type="submit" value="<fmt:message key="label.Login"/>"/>
 </form>
 <br>
+<form name="addStudent" method="post">
+    <input type="hidden" name="command" value="addStudent"/>
+    <br/>
+    <br/>
+    <input type="submit" value="<fmt:message key="message.CommonAction.RegisterNewStudent"/>"/>
+</form>
+<br>
 <form name="GoToAdminLoginForm" method="post">
     <input type="hidden" name="command" value="goToAdminLoginPage"/>
     <br/>

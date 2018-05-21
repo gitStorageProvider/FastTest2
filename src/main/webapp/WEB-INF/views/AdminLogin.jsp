@@ -6,9 +6,9 @@
 <form name="LoginForm" method="post">
     <input type="hidden" name="command" value="adminLogin"/>
     <h4><fmt:message key="label.Login"/></h4>
-    <input type="text" name="email" size="36" class="input" required/>
+    <input type="text" name="adminLogin" size="36" class="input" required/>
     <h4><fmt:message key="label.Password"/></h4>
-    <input type="password" name="email" size="36" class="input" required/>
+    <input type="password" name="adminPassword" size="36" class="input" required/>
     <input type="submit" value="<fmt:message key="label.Login"/>"/>
 </form>
 <br>

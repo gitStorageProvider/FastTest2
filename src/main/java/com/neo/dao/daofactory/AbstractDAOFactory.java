@@ -18,7 +18,7 @@ public abstract class AbstractDAOFactory {
                     throw new UnsupportedOperationException("AbstractDAOFactory not initialized.");
             }
         }catch (Exception e) {
-            throw new DAOException("Excepthion in AbstractDAOFactory while creationg new factory.", e);
+            throw new DAOException("Excepthion in AbstractDAOFactory while creationg new servicefactory.", e);
         }
         return factory;
     }

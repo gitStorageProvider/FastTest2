@@ -31,12 +31,12 @@ public class Controller extends HttpServlet {
                           HttpServletResponse response) throws ServletException, IOException {
 
 
-//        LOGGER.info("Try to go on page = " + request.getContextPath() + "/WEB-INF/views/login.jsp");
-//        response.sendRedirect(request.getContextPath() + "/WEB-INF/views/login.jsp");
+//        LOGGER.info("Try to go on page = " + request.getContextPath() + "/WEB-INF/views/@@login.jsp");
+//        response.sendRedirect(request.getContextPath() + "/WEB-INF/views/@@login.jsp");
 
 
         CommandFactory commandFactory = new CommandFactory();
-        LOGGER.info("command factory created");
+        LOGGER.info("command servicefactory created");
         SessionContent sessionContent = new SessionContent(request, response);
         LOGGER.info("sessionContent created");
         ICommand command = commandFactory.defineCommand(sessionContent);

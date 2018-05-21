@@ -1,6 +1,6 @@
 <%@include file="common/header.jspf" %>
 
-<fmt:message key="header.AdminMainPage"/>
+<fmt:message key="header.StudentMainPage"/>
 <br>
 <br>
 <form name="adminCommand" method="post">

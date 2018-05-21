@@ -5,7 +5,7 @@ import com.neo.controller.SessionContent;
 
 import javax.servlet.ServletException;
 
-public class RegisterStudentCommand implements ICommand {
+public class ShowAllTestsByStudentCommand implements ICommand {
     @Override
     //ToDo: realize method below
     public String execute(SessionContent sessionContent) throws ServletException {
