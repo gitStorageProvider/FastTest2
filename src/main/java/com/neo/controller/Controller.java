@@ -31,16 +31,9 @@ public class Controller extends HttpServlet {
                           HttpServletResponse response) throws ServletException, IOException {
 
 
-//        LOGGER.info("Try to go on page = " + request.getContextPath() + "/WEB-INF/views/@@login.jsp");
-//        response.sendRedirect(request.getContextPath() + "/WEB-INF/views/@@login.jsp");
-
-
         CommandFactory commandFactory = new CommandFactory();
-        LOGGER.info("command servicefactory created");
         SessionContent sessionContent = new SessionContent(request, response);
-        LOGGER.info("sessionContent created");
         ICommand command = commandFactory.defineCommand(sessionContent);
-        LOGGER.info("defined command: " + command.getClass().getName());
         String page = command.execute(sessionContent);
 
         if (page != null) {
@@ -50,10 +43,6 @@ public class Controller extends HttpServlet {
             dispatcher.forward(request, response);
         } else {
             page = ConfigurationManager.getProperty("page.StudentLogin");
-//            request.getSession().setAttribute("nullPage",
-//                    MessageManager.getProperty("message.nullpage"));
-
-
             response.sendRedirect(request.getContextPath() + page);
         }
     }
